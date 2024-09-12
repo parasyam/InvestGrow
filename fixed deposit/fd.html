@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>investgo</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="fd.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-color " id="heading">
+    <div  class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../logo-removebg-preview.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              investing calculators
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./fd.html">FD calculator</a></li>
+                  <li><a class="dropdown-item" href="../mutual funds/mutual.html">Mutual funds calculator</a></li>
+                  <li><a class="dropdown-item" href="../sip/sip.html">Sip calculator</a></li>
+                  <li><a class="dropdown-item" href="../ppf/ppf.html">Ppf calculator</a></li>
+                  <li><a class="dropdown-item" href="../nps/nps.html">Pension calculator</a></li>
+                  <li><a class="dropdown-item" href="../fd Vs m/fdvsm.html">Fd Vs mutual calculator</a></li>
+                  <li><a class="dropdown-item" href="../sipvsswp/sipvsswp.html">Sip to Swp calculator</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <div id="content" style="display: flex ;">
+      <div id="open">
+        <i class="ri-arrow-right-fill"></i>
+      </div>
+      <div id="div0">
+        <i id="closing" class="ri-arrow-left-fill"></i>
+        <h4>How fixed depost works</h4>
+<p>
+  A Fixed Deposit (FD) is a savings option where you invest a lump sum with a bank for a fixed period at a guaranteed interest rate, earning returns at maturity.</p>     
+<h5>pros</h5>
+<p>* Guaranteed Returns <br>* Low risk<br>* Flexible Tenure</p>
+<h5>cons</h5>
+<p>* Lower Returns <br>* Taxable Interest<br>* Lock-In Period</p>
+   
+      </div>
+      <div id="div1">
+        <h3 style="color:rgb(114, 201, 114);">Fixed deposit caluculator</h3>
+        <br>
+        
+            <table>
+              <tr>
+                <td><label for="fdcLeft">Capital: </label></td>
+                <td><input class="inputs" type="number" id="fdc" placeholder="Enter capital amount"></td>
+            </tr>
+            <tr>
+                <td><label for="fdtLeft">Time:</label></td>
+                <td><input class="inputs" type="number" id="fdt" placeholder="Enter tenure in years"></td>
+            </tr>
+                
+                <tr>
+                    <td><label for="fdrLeft">Interest Rate:</label></td>
+                    <td><input class="inputs" type="number" id="fdr" placeholder="Enter rate of interest p.a"></td>
+                </tr>
+              </table>
+              <button onclick="fd()" id="but">Calculate</button>
+              
+
+              <canvas id="fdchart" width="400" height="200"></canvas>
+      </div>
+      <div id="div2">
+        <div id="result">
+         
+        </div>
+        
+      </div>
+
+    </div>  
+    <script src="fd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

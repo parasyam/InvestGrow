@@ -1,0 +1,51 @@
+
+
+
+#div{
+    padding-left: 50px;
+    margin-top: 60px;
+    
+}
+#div3 {
+    padding-right: 50px;
+    margin-top: 60px;
+}
+   
+
+#but{
+    margin-top: 50px;
+    width: 150px;
+    margin-left: 40px;
+}
+
+#whowon{
+    text-align: center;
+    color: rgb(6, 148, 36);
+}
+
+nav img{
+    height: 10vh;
+}
+#resultR{
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    margin-top: 10px;
+}
+#result{
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    margin-top: 10px;
+}
+#head{
+    margin-left: 500px;
+    color: rgb(16, 165, 56);
+    }
+body{
+
+    background-color: rgb(227, 235, 226);
+}
+
