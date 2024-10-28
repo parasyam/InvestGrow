@@ -1,74 +1,75 @@
-
-
-html,body{
-    /* background-color: #E6F7E9; */
+html, body {
     height: 100%;
     width: 100%;
 }
-nav img{
+
+nav img {
     height: 10vh;
 }
-#div0{
-    padding: 10px ;
-    width: 30% ;
-    /* border: 2px solid rgb(191, 239, 203); */
-    background-color: #e6f1e4;
-    border-right: 1px solid #000;
-}
-#content{
-    /* background-color: #E6F7E9; */
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     height: 100%;
 }
-#closing{
-    background-color: rgb(149, 236, 149);
-    width: 45px;
-    padding: 3px;
-    font-size: 20px;
-    border-radius: 7px;
-    text-align: center;
-    margin-left: 90%;
+
+#div1, #div2 {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 1 30%;
+    min-width: 250px;
 }
-#open{
-    display: none;
-    /* background-color: #E6F7E9; */
+
+#div0 {
+    padding: 10px;
+    background-color: #e6f1e4;
+    border: 1px solid #000;
+    margin: 10px;
+    flex: 1 1 30%;
+    min-width: 250px;
 }
-#open i{
-    background-color: rgb(186, 245, 127);
-    font-size: 30px;
-    margin-left: 10px;
-    padding: 3px;
-    border-radius: 6px;
-}
-#div3 {
-    margin-left: 30px;
-    padding-right: 50px;
-    margin-top: 100px;
-}
-#div1{
-    margin-left: 60px;
-}
-.inputs{
-    border-radius: 6px;
-} 
-#div2 {
-   
-    margin-top: 30px;
-} 
-#but{
+
+#but {
     margin-top: 20px;
-    /* width: 150px; */
     padding: 5px 10px;
     border-radius: 6px;
     background-color: rgb(149, 236, 149);
     margin-left: 40px;
 }
-#result{
+
+#result {
     border: 2px solid #000;
     padding: 20px;
     border-radius: 10px;
     display: none;
 }
 
+@media (max-width: 1200px) {
+    #div0, #div1, #div2 {
+        flex: 1 1 45%;
+    }
+}
 
+@media (max-width: 768px) {
+    #div0, #div1, #div2 {
+        flex: 1 1 100%;
+    }
+}
 
+body {
+    background-color: #000;
+}
+
+#open {
+    display: none;
+}
+
+#open i {
+    background-color: rgb(186, 245, 127);
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 6px;
+}
 
