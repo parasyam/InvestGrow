@@ -19,7 +19,7 @@ nav img {
     margin: 10px;
     flex: 1 1 30%;
     min-width: 250px;
-    background-color:white;
+    
 }
 
 #div0 {
@@ -58,9 +58,6 @@ nav img {
     }
 }
 
-body {
-    background-color: #000;
-}
 
 #open {
     display: none;
@@ -73,6 +70,8 @@ body {
     padding: 3px;
     border-radius: 6px;
 }
+
+
 
 
 
