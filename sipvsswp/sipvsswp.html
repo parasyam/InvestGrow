@@ -46,74 +46,59 @@
     <div id="nav">
         <!-- <div id="img"><img src="logo.png" alt=""></div> -->
     </div>
-    <h3 id="head">Sip To Swp</h3><br>
+    <div class="comparison-wrapper">
+      <h3 id="head">SIP vs SWP Comparison</h3>
       
-    <div style="display: flex; justify-content: space-between;">
-      
-      <!-- left -->
-      <div id="div">
+      <div class="comparison-container">
+        <!-- SIP Section -->
+        <div class="comparison-section">
+          <h3>SIP (Systematic Investment Plan)</h3>
+          
+          <div class="input-section">
+            <div class="input-group">
+              <label for="capital">Monthly Investment Amount (₹)</label>
+              <input type="number" id="capital" placeholder="Enter monthly investment">
+            </div>
+            <div class="input-group">
+              <label for="sipt">Investment Period (Years)</label>
+              <input type="number" id="sipt" placeholder="Enter tenure in years">
+            </div>
+            <div class="input-group">
+              <label for="returns">Expected Return Rate (% p.a.)</label>
+              <input type="number" id="returns" placeholder="Enter expected return p.a">
+            </div>
+          </div>
+          
+          <div id="result"></div>
+          <div class="chart-container">
+            <canvas id="sip" width="400" height="250"></canvas>
+          </div>
+        </div>
         
-        <h3>SIP(Systematic Investment Plan)</h3>
-        <table>
-                
-          <tr>
-            <td><label for="fdtLeft">Time:</label></td>
-                    <td><input type="number" id="sipt" placeholder="Enter tenure in years"></td>
-                  </tr>
-                  
-                </table>
-                <p id="result"></p>
-                <!-- <button onclick="fd()">Calculate</button> -->
-                <canvas id="sip" width="400" height="250"></canvas>
-                
-              </div>
-              
-              
-              <div id="div2">
-                
-                <table>
-                  <tr>
-                    <td><label for="fdcLeft">Amount: </label></td>
-                    <td><input type="number" id="capital" placeholder="enter monthly investment"></td>
-                </tr>
-                <tr>
-                    <td><label for="fdrRight">Return Rate:</label></td>
-                    <td><input type="number" id="returns" placeholder="Enter expected return p.a"></td>
-                </tr>
-               
-                
-                <!-- Incomplete row or content -->
-            </table>
-            <button onclick="sip()" id="but">Calculate</button>
-            
-        </div>
-
-       <!-- right -->
-
-
-        <div id="div3">
-            <h3>SWP(Systematic Withdraw Plan)</h3>
-            <table>
-                <tr>
-                    <td><label for="fdcLeft">Withdrawal Amount: </label></td>
-                    <td><input type="number" id="emw" placeholder="Enter montly withdrawal "></td>
-                </tr>
-                
-                
-                <tr>
-                    
-                    <td><label for="fdtLeft">Time:</label></td>
-                    <td><input type="number" id="swpt" placeholder="Enter tenure in years"></td>
-                </tr>
-            </table>
-            <!-- <button onclick="calculateRight()">Calculate</button> -->
-            <p id="resultR"></p>
+        <!-- SWP Section -->
+        <div class="comparison-section">
+          <h3>SWP (Systematic Withdrawal Plan)</h3>
+          
+          <div class="input-section">
+            <div class="input-group">
+              <label for="emw">Monthly Withdrawal Amount (₹)</label>
+              <input type="number" id="emw" placeholder="Enter monthly withdrawal">
+            </div>
+            <div class="input-group">
+              <label for="swpt">Withdrawal Period (Years)</label>
+              <input type="number" id="swpt" placeholder="Enter tenure in years">
+            </div>
+          </div>
+          
+          <div id="resultR"></div>
+          <div class="chart-container">
             <canvas id="swp" width="400" height="250"></canvas>
-
+          </div>
         </div>
-    </div>
-    <div>
-        <p id="whowon" ></p>
+      </div>
+      
+      <button onclick="sip()" id="but">Compare SIP vs SWP</button>
+      <div id="whowon"></div>
     </div>
     
 
